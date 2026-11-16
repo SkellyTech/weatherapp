@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <h1>Weather App</h1>
+        <p>Check the current weather for a city or see a quick snapshot of major state capitals.</p>
+        <div class="controls">
+          <input id="city" list="stateSuggestions" placeholder="Enter a city, state, or abbreviation" autocomplete="off" />
+          <datalist id="stateSuggestions"></datalist>
+          <button type="button" onclick="getWeather()">Get Weather</button>
+          <button type="button" onclick="getAllWeather()">Show State Capitals</button>
+        </div>
+      </section>
+
+      <section id="result" class="results-grid"></section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
